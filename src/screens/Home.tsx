@@ -5,6 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 import { AppNavigationProp } from 'App';
 import { color } from 'styles';
 
+const BG = color.BG;
 const WHITE = color.WHITE;
 const BLACK = color.BLACK;
 const BLUE = color.BLUE;
@@ -78,7 +79,7 @@ const Home = ({}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F8F8FF',
+    backgroundColor: BG,
   },
   textInput: {
     height: 55,
