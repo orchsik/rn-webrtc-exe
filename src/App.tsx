@@ -2,7 +2,7 @@ import 'react-native-gesture-handler';
 
 import React from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, RouteProp } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import {
   createDrawerNavigator,
@@ -23,6 +23,9 @@ type AppNavigationParamList = {
 };
 export type AppNavigationProp<T extends keyof AppNavigationParamList = 'Home'> =
   DrawerNavigationProp<AppNavigationParamList, T>;
+
+export type AppRouteProp<T extends keyof AppNavigationParamList = 'Home'> =
+  RouteProp<AppNavigationParamList, T>;
 
 type HomeStackPramList = {
   Home: undefined;
